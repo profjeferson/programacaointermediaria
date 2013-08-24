@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Figura quadrado</title>
+    </head>
+    <body>
+        <h1>Dados da figura</h1>
+         <?php
+            require_once 'Quadrado.php';
+            if(isset($_POST['calc'])){
+                $quadrado = new Quadrado();
+                $quadrado->setCor($_POST["cor"]);
+                $quadrado->setLado($_POST["lado"]);
+                echo "Cor do quadrado: ".$quadrado->getCor()."<br>";
+                echo "Área do quadrado: ".$quadrado->area()."<br>";
+                echo "Perímetro do quadrado: ".$quadrado->perimetro();
+            }
+        ?>
+    </body>
+</html>
