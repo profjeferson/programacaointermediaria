@@ -1,5 +1,6 @@
 <?php
 require_once './Figura.php';
+
 class Quadrado extends Figura {
 
     private $lado;

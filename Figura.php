@@ -1,5 +1,6 @@
 <?php
 include './Forma.php';
+
 abstract class Figura implements Forma{
     private $cor;
     
